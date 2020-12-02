@@ -20,12 +20,11 @@ passwords = [line.rstrip('\n') for line in open("passwords.txt")]
 x = 0
 
 for i in range(len(passwords)):
-    numbers = passwords[i].split()[0].split(
-        "-")  #get both numbers (first and second)
-    char = passwords[i].split()[1].strip(":")  #get letter
-    pass_split = passwords[i].split()[2]  #get password
-    firstNum = int(numbers[0]) - 1  #first number
-    secondNum = int(numbers[1]) - 1  #second number
+    numbers = passwords[i].split()[0].split("-") 
+    char = passwords[i].split()[1].strip(":")
+    pass_split = passwords[i].split()[2]
+    firstNum = int(numbers[0]) - 1
+    secondNum = int(numbers[1]) - 1
     if pass_split[firstNum] != pass_split[secondNum] and (
             pass_split[firstNum] == char or pass_split[secondNum] == char):
         x += 1
