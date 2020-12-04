@@ -26,3 +26,4 @@ with open("map.txt", 'r') as file:
             findTrees(x, right, down)
             for right, down in [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
         ])))
+    
