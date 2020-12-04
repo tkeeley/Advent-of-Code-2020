@@ -9,6 +9,7 @@
 #  /'.''.'.\
 #  ^^^[_]^^
 
+import functools #for using reduce
 
 def findTrees(x, right, down):
     return len([
